@@ -1,0 +1,107 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>casoPractico_Javier</display-name>
+  <welcome-file-list>
+    <welcome-file>Login.html</welcome-file>
+    <welcome-file>Login.htm</welcome-file>
+    <welcome-file>Login.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+      <servlet>
+    <description></description>
+    <display-name>Login</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>cl.modulo5.servlets.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+    <servlet-name>AgregarRegistros</servlet-name>
+    <url-pattern>/AgregarRegistros</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AgregarRegistros</display-name>
+    <servlet-name>AgregarRegistros</servlet-name>
+    <servlet-class>cl.grupo2.servlets.registro.AgregarRegistros</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description></description>
+    <display-name>ListarRegistros</display-name>
+    <servlet-name>ListarRegistros</servlet-name>
+    <servlet-class>cl.grupo2.servlets.registro.ListarRegistros</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListarRegistros</servlet-name>
+    <url-pattern>/ListarRegistros</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ActualizarRegistro</display-name>
+    <servlet-name>ActualizarRegistro</servlet-name>
+    <servlet-class>cl.grupo2.servlets.registro.ActualizarRegistro</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ActualizarRegistro</servlet-name>
+    <url-pattern>/ActualizarRegistro</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+    <description></description>
+    <display-name>EditarRegistro</display-name>
+    <servlet-name>EditarRegistro</servlet-name>
+    <servlet-class>cl.grupo2.servlets.registro.EditarRegistro</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditarRegistro</servlet-name>
+    <url-pattern>/EditarRegistro</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>EliminarRegistro</display-name>
+    <servlet-name>EliminarRegistro</servlet-name>
+    <servlet-class>cl.grupo2.servlets.registro.EliminarRegistro</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EliminarRegistro</servlet-name>
+    <url-pattern>/EliminarRegistro</url-pattern>
+  </servlet-mapping>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</web-app>

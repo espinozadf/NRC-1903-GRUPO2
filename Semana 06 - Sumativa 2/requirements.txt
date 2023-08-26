@@ -1,0 +1,27 @@
+Para un buen funcionamiento del proyecto se recomienda ejecutarlo con:
+
+JAVA SE 17 + JDK 17
+IDE Eclipse 2023-06 (4.28.0)
+Tomcat v10.1
+MySQL Workbench (Aca se deberá ejecutar la siguiente query):
+
+CREATE DATABASE registro_ingreso;
+USE registro_ingreso;
+CREATE TABLE registro (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  RUT VARCHAR(100) NOT NULL,
+  Nombre VARCHAR(100) NOT NULL,
+  Apellidos VARCHAR(100) NOT NULL,
+  Empresa VARCHAR(100) NOT NULL,
+  Cargo VARCHAR(100),
+  Departamento VARCHAR(100),
+  Estado VARCHAR(100) NOT NULL,
+  HoraEntrada VARCHAR(100) NOT NULL,
+  HoraSalida VARCHAR(100)
+);
+
+Para efectos de este ejercicio se trabajo con estas credenciales en MySQL:
+            usuario = "pruebaConexion";
+            password = "Cursojava";
+
+*El usuario y password pueden ser modificados, tendras que ir a la ruta \DesarrolloWebMovilCSS\java\cl\grupo2\daos y modificar el archivo donde mencione user y password.
